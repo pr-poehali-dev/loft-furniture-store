@@ -168,11 +168,11 @@ const Navbar = () => {
                 <div className="mt-8 pt-6 border-t border-[#2A303C] text-gray-400 text-sm">
                   <div className="flex items-center mb-3">
                     <Icon name="Phone" className="h-4 w-4 mr-2" />
-                    +7 (812) 987-65-43
+                    +7 (981) 947-40-96
                   </div>
                   <div className="flex items-center">
                     <Icon name="Mail" className="h-4 w-4 mr-2" />
-                    shop@loftstyle.ru
+                    karavan_88@mail.ru
                   </div>
                 </div>
               </div>

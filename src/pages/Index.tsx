@@ -379,15 +379,15 @@ const Index = () => {
                   name="MapPin"
                   className="h-5 w-5 mr-2 text-[#9b87f5] shrink-0"
                 />
-                г. Санкт-Петербург, ул. Литейная, 32, ТЦ "Мебельный рай", 2 этаж
+                г. Санкт-Петербург, Сертолово, ул. Тихвинская, 11
               </p>
               <p className="flex items-center">
                 <Icon name="Phone" className="h-5 w-5 mr-2 text-[#9b87f5]" />
-                +7 (812) 987-65-43
+                +7 (981) 947-40-96
               </p>
               <p className="flex items-center">
                 <Icon name="Mail" className="h-5 w-5 mr-2 text-[#9b87f5]" />
-                shop@loftstyle.ru
+                karavan_88@mail.ru
               </p>
               <p className="flex items-center">
                 <Icon name="Clock" className="h-5 w-5 mr-2 text-[#9b87f5]" />
