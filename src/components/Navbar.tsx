@@ -1,11 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { 
-  Sheet,
-  SheetContent,
-  SheetTrigger
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
@@ -43,7 +38,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-[#1A1F2C] py-3 shadow-lg" : "bg-transparent py-5"
       }`}
@@ -74,7 +69,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          
+
           {navLinks.slice(1).map((link, index) => (
             <Link
               key={index}
@@ -90,26 +85,37 @@ const Navbar = () => {
           <Button variant="ghost" size="icon" className="text-white">
             <Icon name="Search" className="h-5 w-5" />
           </Button>
-          
+
           <Link to="/cart" className="relative text-white">
             <Icon name="ShoppingCart" className="h-5 w-5" />
             <span className="absolute -top-2 -right-2 bg-[#9b87f5] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
               3
             </span>
           </Link>
-          
-          <Button variant="ghost" size="icon" className="text-white hidden md:flex">
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="text-white hidden md:flex"
+          >
             <Icon name="UserRound" className="h-5 w-5" />
           </Button>
 
           {/* Mobile menu trigger */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white md:hidden"
+              >
                 <Icon name="Menu" className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-[#1A1F2C] text-white border-[#2A303C] w-[80vw]">
+            <SheetContent
+              side="right"
+              className="bg-[#1A1F2C] text-white border-[#2A303C] w-[80vw]"
+            >
               <div className="py-6">
                 <h3 className="font-bold text-xl mb-4">LOFT STYLE</h3>
                 <div className="space-y-1">
@@ -125,7 +131,7 @@ const Navbar = () => {
                     </Link>
                   ))}
                 </div>
-                
+
                 <div className="mt-8 space-y-1">
                   <p className="text-gray-400 font-medium mb-2">Категории</p>
                   {categories.map((category, index) => (
@@ -139,9 +145,9 @@ const Navbar = () => {
                     </Link>
                   ))}
                 </div>
-                
+
                 <div className="flex items-center mt-8 pt-6 border-t border-[#2A303C]">
-                  <Link 
+                  <Link
                     to="/cart"
                     className="flex items-center mr-6"
                     onClick={() => setIsOpen(false)}
@@ -149,7 +155,7 @@ const Navbar = () => {
                     <Icon name="ShoppingCart" className="h-5 w-5 mr-2" />
                     Корзина
                   </Link>
-                  <Link 
+                  <Link
                     to="/account"
                     className="flex items-center"
                     onClick={() => setIsOpen(false)}
@@ -158,7 +164,7 @@ const Navbar = () => {
                     Войти
                   </Link>
                 </div>
-                
+
                 <div className="mt-8 pt-6 border-t border-[#2A303C] text-gray-400 text-sm">
                   <div className="flex items-center mb-3">
                     <Icon name="Phone" className="h-4 w-4 mr-2" />
